@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -44,14 +44,14 @@
   </header>
 
   <main class="main-index">
-    <h2 class="visually-hidden">Welcome to the gorgeous</h2>
-    <img src="" name="logo-welcome" alt="Добро пожаловать в великолепный">
-    <h1 class="visually-hidden">SEDONA Because the Grand Canyon sucks</h1>
-    <img src="" name="logo-sedona" alt="Седона">
-    <h2>Седона — небольшой городок в Аризоне,
-      заслуживающий большего!</h2>
-    <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+    <section class="main-logo">
+      <h1 class="visually-hidden">Welcome to the gorgeous</h1>
+      <img src="images/welcome.svg" name="logo-welcome" width="458" height="352" alt="Добро пожаловать в великолепный">
+    </section>
     <section class="advantages">
+      <h2>Седона — небольшой городок в Аризоне,
+        заслуживающий большего!</h2>
+      <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages-list">
         <li class="advantages-item advantages-picture">
@@ -66,7 +66,7 @@
           <p class="advantages-description">Все достопримечательности находятся очень близко</p>
         </li>
 
-        <li class="advantages-item">
+        <li class="advantages-item advantages-medium">
           <h3 class="advantages-title">Красивая
             дорога</h3>
           <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -86,58 +86,63 @@
         </li>
       </ul>
     </section>
-    <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-    <p>Опытный персонал и качественное обслуживание!</p>
     <section class="comfort">
+      <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+      <p>Опытный персонал и качественное обслуживание!</p>
       <h2 class="visually-hidden">Комфорт</h2>
       <ul class="comfort-list">
         <li class="comfort-item">
           <h3 class="comfort-title">Жильё</h3>
-          <p class="comfort-description">Рекомендуем пожить в настоящем мотеле,
+          <p>Рекомендуем пожить в настоящем мотеле,
             всё как в кино!</p>
         </li>
 
         <li class="comfort-item">
           <h3 class="comfort-title">Еда</h3>
-          <p class="comfort-description">Всегда заказывайте
+          <p>Всегда заказывайте
             топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
 
         <li class="comfort-item">
           <h3 class="comfort-title">Сувениры</h3>
-          <p class="comfort-description">Не только китайского,
+          <p>Не только китайского,
             но и настоящего местного производства!</p>
         </li>
       </ul>
     </section>
-    <h2>Заинтересовались?</h2>
-    <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <a class="button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+    <section class="offer">
+      <h2>Заинтересовались?</h2>
+      <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a class="offer-link" href="#">
+        <button class="offer-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
+        </button>
+      </a>
+    </section>
   </main>
   <footer class="page-footer">
-    <aside class="subscription">
+    <section class="subscription subscription-catalog">
       <h2>Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscription-post" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="subscription-text">e-mail</label>
         <input id="subscription-text" type="email" name="mail" placeholder="Ваш e-mail">
-        <button class="button" type="submit">ПОДПИСАТЬСЯ</button>
+        <button class="button-post" type="submit">ПОДПИСАТЬСЯ</button>
       </form>
-    </aside>
+    </section>
     <section class="footer-social">
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="https://vk.com/htmlacademy">
+          <a class="button-social" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy">
+          <a class="button-social" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="button-social" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
